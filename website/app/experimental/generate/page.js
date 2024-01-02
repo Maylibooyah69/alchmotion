@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import ThreeDCanvas from './ThreeDCanvas'
 import { useState, useRef } from 'react';
 import Image from 'next/image'
 import axios from 'axios';
@@ -51,7 +50,7 @@ export default function Generate() {
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
             <h1 className="text-6xl font-bold">Image Generation Demo</h1>
 
-            < ThreeDCanvas />
+
 
             <Image src={image} alt="3d" width={500} height={500} />
             <div className="flex flex-col items-center justify-center">

@@ -9,8 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@material-tailwind/react": "^2.1.8",
+    "@mui/icons-material": "^5.15.2",
+    "@mui/material": "^5.15.2",
+    "@react-three/drei": "^9.92.7",
     "@react-three/fiber": "^8.15.12",
+    "@tensorflow/tfjs": "^4.15.0",
     "axios": "^1.6.3",
+    "gsplat": "^1.0.2",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",

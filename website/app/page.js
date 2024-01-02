@@ -9,8 +9,14 @@ export default function Home() {
         <Link href="/experimental/generate">
           Generate an image
         </Link>
-        <Link href="/blog">
-          Read Our Blog Posts
+        <Link href="/experimental/3d">
+          ThreeJS integration
+        </Link>
+        <Link href="/experimental/tf">
+          Tensorflow integration
+        </Link>
+        <Link href="/experimental/model-data-management">
+          Model and data management
         </Link>
       </div>
     </main>
