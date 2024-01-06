@@ -16,5 +16,8 @@ export default function ExperimentPage(params) {
         <Link href="/experimental/gsplat">
             Gaussian Splattering
         </Link>
+        <Link href="/experimental/backendCalls">
+            Backend Calls
+        </Link>
     </div>)
 };
