@@ -4,6 +4,9 @@ export default function ExperimentPage(params) {
         <Link href="/experimental/generate">
             Generate an image
         </Link>
+        <Link href="/experimental/edit">
+            Image editing
+        </Link>
         <Link href="/experimental/3d">
             ThreeJS integration
         </Link>

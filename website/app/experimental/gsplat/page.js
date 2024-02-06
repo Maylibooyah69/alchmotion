@@ -14,7 +14,7 @@ extend({ TAARenderPass, OutputPass })
 export default function GasSplat(params) {
     return (
         <main className="flex flex-col min-h-screen items-center justify-between py-24">
-            <h1 className="text-6xl font-bold">Gaussian Splattering</h1>
+            <h1 className="text-6xl font-bold">Gaussian Splats</h1>
             <Canvas>
                 <Splat src="https://huggingface.co/cakewalk/splat-data/resolve/main/nike.splat" />
             </Canvas>

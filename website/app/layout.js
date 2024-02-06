@@ -1,3 +1,4 @@
+
 import { Inter } from 'next/font/google'
 import './globals.css'
 import HeaderNav from '@/components/ui/headerNav'
@@ -15,11 +16,10 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </head>
-      <body className={inter.className}>
-        <HeaderNav />
-
-        {children}
-      </body>
+        <body className={inter.className}>
+          <HeaderNav />
+          {children}
+        </body>
     </html>
   )
 }

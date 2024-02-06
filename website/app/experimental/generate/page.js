@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { useState, useRef } from 'react';
 import Image from 'next/image'
 import axios from 'axios';
+import { Suspense } from 'react'
+
 
 export default function Generate() {
     const [image, setImage] = useState('')
@@ -52,18 +54,17 @@ export default function Generate() {
 
 
 
-            <Image src={image} alt="3d" width={500} height={500} />
+            <Suspense fallback={<p>Loading Image...</p>}>
+                {image && <Image src={image} alt="3d" width={500} height={500} />}
+            </Suspense>
             <div className="flex flex-col items-center justify-center">
 
-                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Text Prompt</label>
                 <textarea ref={textArea} id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
 
                 <button onClick={handleGenerate} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                     Generate
                 </button>
-
-
-                calling stable diffusion API
+                <p>using stable diffusion API</p>
             </div>
         </main>
     )
