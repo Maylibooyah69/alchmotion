@@ -2,7 +2,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Stage, Layer, Star, Text } from 'react-konva';
-
+// https://konvajs.org/react-konva/
 function generateShapes() {
     const width = 400;
     const height = 400;
