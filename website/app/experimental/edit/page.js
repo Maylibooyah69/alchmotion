@@ -4,10 +4,13 @@ import { createRoot } from 'react-dom/client';
 import { Stage, Layer, Star, Text } from 'react-konva';
 
 function generateShapes() {
+    const width = 400;
+    const height = 400;
+
     return [...Array(10)].map((_, i) => ({
         id: i.toString(),
-        x: Math.random() * window.innerWidth,
-        y: Math.random() * window.innerHeight,
+        x: Math.random() * width,
+        y: Math.random() * height,
         rotation: Math.random() * 180,
         isDragging: false,
     }));
@@ -40,7 +43,7 @@ const App = () => {
     };
 
     return (
-        <Stage width={window.innerWidth} height={window.innerHeight}>
+        <Stage width={400} height={400}>
             <Layer>
                 <Text text="Try to drag a star" />
                 {stars.map((star) => (
